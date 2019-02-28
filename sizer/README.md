@@ -6,7 +6,7 @@ These tools exist as ehancements to Nutanix Sizer.
 
 Install Tampermonkey in Chrome<br>
 Click Tampermonkey and click Create a new script...<br>
-Copy and paste the code from the js files<br>
+Copy and paste the code from the js files. **Each file needs to be placed in it's own Tamper Monkey script**<br>
 * Privacy Mode: https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-PrivacyMode.js
 * Simulate Failure: https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-SimulateFailure.js
 
