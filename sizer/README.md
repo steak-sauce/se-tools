@@ -8,9 +8,9 @@ Install Tampermonkey in Chrome<br>
 Click Tampermonkey and click Create a new script...<br>
 Copy and paste the code from the js files<br>
 * Privacy Mode: https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-PrivacyMode.js
-* https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-SimulateFailure.js
-<br>
-Enable script<br><br>
+* Simulate Failure: https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-SimulateFailure.js
+
+Enable script
 
 ## Authors
 
