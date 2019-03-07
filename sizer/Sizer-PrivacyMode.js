@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Sizer: Privacy Mode
+// @name         SizerPrivacy
 // @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Hide customer info in sizer
+// @version      1.1.0
+// @description  Hide stuff in sizer
 // @author       Troy Ward, Brad Faas, Dwayne Harvey, Damien Iweins
 // @match        https://services.nutanix.com
 // @grant        GM_addStyle
@@ -40,12 +40,14 @@ function getCookie(cname) {
 
 // Function to add PrivacyMode selection to Sizer
 function addPrivacyMode(firstLoad) {
+
     // Make sure we're in Sizer and not another tool on services.nutanix.com
     // Make sure it's not already added
     //var sizerMode = document.getElementById("nx.sizer");
     var sizerModeMy = document.getElementsByClassName("src-components-container-my-scenarios-___my-scenarios__dashboard-container___1Fuib");
     var sizerModeShared = document.getElementsByClassName("src-components-container-shared-scenarios-___shared-scenarios__shared-scenario-count-container___8q0L-");
-    if(typeof sizerModeMy[0] === 'undefined' && typeof sizerModeShared[0] === 'undefined') { return; }
+    var sizerModeSearch = document.getElementsByClassName("src-components-container-search-page-___search__search-filter-wrapper___2bK5o");
+    if(typeof sizerModeMy[0] === 'undefined' && typeof sizerModeShared[0] === 'undefined' && typeof sizerModeSearch[0] === 'undefined' ) { return; }
 
     if(firstLoad) {
         PrivacyMode = getCookie("PrivacyMode");
