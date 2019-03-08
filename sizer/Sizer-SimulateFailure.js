@@ -7,10 +7,11 @@
 // @match        https://services.nutanix.com/
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
-// @run-at 		 document-idle
+// @run-at 	 document-idle
 // @grant        GM_addStyle
+// @downloadURL  https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-SimulateFailure.js
+// @updateURL    https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-SimulateFailure.js
 // ==/UserScript==
-
 
 function failNodes(){
 	var nodeCount, tableRow;
@@ -95,7 +96,6 @@ function failNodes(){
 }
 
 function addFailHTML() {
-
     // Are we already there?
     var fn = document.getElementById("failedNodes");
     if(fn) {
@@ -109,7 +109,6 @@ function addFailHTML() {
 
 	HWSums=document.getElementsByClassName("src-components-container-sizing-right-container-hardware-summary-___hardware-summary__hardware-summary-header-text___3kpl-")[0];
     HWSums.innerHTML = htmlCode;
-
 
     //Sets the default values
     setCpuUtil = document.getElementsByClassName("src-components-presentational-SizingSummary-___sizing-summary__progress-percentage___2pY65")[0].textContent;
@@ -139,14 +138,12 @@ function addFailHTML() {
     }
 }
 
-
 function clearWaitTimer() {
     clearInterval(waitForSizerScreen);
     waitForSizerScreen=null;
 }
 
 function WaitForSizerScreen() {
-
     var WaitForSizerScreenVar = document.getElementsByClassName("src-components-presentational-sizing-options-launcher-___sizingOptions__sizing-option-label___2mSWJ");
     //var WaitForSizerScreenVar = document.getElementsByClassName("src-components-container-sizing-right-container-hardware-summary-___hardware-summary__hardware-summary-header-text___3kpl-");
 //    console.log("Watch = " + WaitForSizerScreenVar)
