@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Sizer: Simulate Failure
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  One Click Node Failure
 // @author       Troy Ward, Brad Faas, Dwayne Harvey, Damien Iweins
 // @match        https://sizer.nutanix.com/
