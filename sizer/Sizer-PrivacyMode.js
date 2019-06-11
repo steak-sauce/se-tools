@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Sizer: PrivacyMode
 // @namespace    http://tampermonkey.net/
-// @version      1.1.1
+// @version      1.1.2
 // @description  Hide stuff in sizer
 // @author       Troy Ward, Brad Faas, Dwayne Harvey, Damien Iweins
 // @match        https://sizer.nutanix.com/
