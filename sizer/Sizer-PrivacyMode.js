@@ -4,7 +4,7 @@
 // @version      1.1.1
 // @description  Hide stuff in sizer
 // @author       Troy Ward, Brad Faas, Dwayne Harvey, Damien Iweins
-// @match        https://services.nutanix.com
+// @match        https://sizer.nutanix.com/
 // @grant        GM_addStyle
 // @downloadURL  https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-PrivacyMode.js
 // @updateURL    https://raw.githubusercontent.com/steak-sauce/se-tools/master/sizer/Sizer-PrivacyMode.js
