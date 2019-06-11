@@ -4,7 +4,7 @@
 // @version      1.0.1
 // @description  One Click Node Failure
 // @author       Troy Ward, Brad Faas, Dwayne Harvey, Damien Iweins
-// @match        https://services.nutanix.com/
+// @match        https://sizer.nutanix.com/
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
 // @run-at 	 document-idle
